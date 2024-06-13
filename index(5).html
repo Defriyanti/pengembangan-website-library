@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defriyantisgr/Library</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            min-height: 100vh;
+            position: relative;
+            background-image: url('https://cdn.kibrispdr.org/data/12/background-perpustakaan-hd-32.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        header {
+            background-color: maroon;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: brown;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff !important;
+            text-decoration: none !important;
+            padding: 0 15px;
+        }
+        nav a:hover {
+            background-color: black;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: salmon;
+            min-width: 150px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: whitesmoke;
+            padding: 10px 14px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        @media (max-width: 576px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                display: block;
+                padding: 10px 0;
+            }
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .contact-info, .social-media {
+            background-color: bisque;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 100%;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+        .contact-info h3, .social-media h3 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .social-media ul {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .social-media ul li {
+            flex: 1;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .social-media ul li a {
+            display: block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 50%;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-media ul li a:hover {
+            background-color: #0056b3;
+        }
+
+        .social-media ul li a.facebook {
+            background-color: #3b5998;
+        }
+        .social-media ul li a.instagram {
+            background-color: #E4405F;
+        }
+
+        .social-media ul li a.youtube {
+            background-color: #FF0000;
+        }
+
+        /* Responsif */
+        @media (max-width: 768px) {
+            .social-media ul li {
+                flex-basis: 48%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .social-media ul li {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+         <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 65px;">Perpustakaan SUKA BACA</h1>
+    </header>
+    <nav>
+        <div class="dropdown">
+            <a href="#">Beranda</a>
+            <div class="dropdown-content">
+              <a href="index.html">Home</a>
+              <a href="index(5).html">About Us</a>
+            </div>
+        </div>
+          <a href="index(2).html">Link Eksternal</a>
+          <a href="index(3).html">Layanan</a>
+          < <div class="dropdown">
+            <a href="#">Koleksi</a>
+            <div class="dropdown-content">
+                <a href="index(6).html">video dan audio</a>
+                <a href="index(4).html">tabel bahan buku</a>
+                <a href="index(7).html">buku</a>
+                <a href="index(8).html">belajar php</a>
+            </div>
+        </div>
+      </nav>
+    <h2>Informasi Kontak</h2>
+    <div class="contact-info">
+        <h3>Detail Kontak</h3>
+        <ul>
+            <li><strong>Nama:</strong> Defriyanti Sigiro</li>
+            <li><strong>Email:</strong> Defriyantisgr@gmail.com</li>
+            <li><strong>Telepon:</strong> 082345673415</li>
+            <li><strong>Alamat:</strong> Jl. Abdul Hakim, Padang Bulan, Medan Baru, Kota Medan, Sumatera Utara</li>
+            <br>
+            <p>Website ini dibuat untuk memenuhi tugas individu dari mata kuliah pengembangan web dengan dosen pengampu ibu Himma Dewiyana S.T.,M.Hum.,</p>
+        </ul>
+    </div>
+
+    <h2>Akun Media Sosial</h2>
+    <div class="social-media">
+        <h3>Ikuti Saya di Media Sosial</h3>
+        <ul>
+            <li><a href="https://www.facebook.com/profile.php?id=100081090624821" class="facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/pequenaesc?igsh=MWxpOGJnMjVrcW1kNQ==" class="instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/@defriyantisigiro2906" class="youtube" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+    </div>
+    <h2 style="color: #fff;">Beranda</h2>
+    <a href="index.html">Selanjutnya</a>   

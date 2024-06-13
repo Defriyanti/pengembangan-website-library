@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defriyantisgr/Library</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/f9355065a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            min-height: 100vh;
+            position: relative;
+            background-image: url('https://cdn.kibrispdr.org/data/12/background-perpustakaan-hd-32.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        header {
+            background-color: maroon;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: brown;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff !important;
+            text-decoration: none !important;
+            padding: 0 15px;
+        }
+        nav a:hover {
+            background-color: black;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: salmon;
+            min-width: 150px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: whitesmoke;
+            padding: 10px 14px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        @media (max-width: 576px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                display: block;
+                padding: 10px 0;
+            }
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .contact-info, .social-media {
+            background-color: bisque;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 100%;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+        .contact-info h3, .social-media h3 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .social-media ul {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .social-media ul li {
+            flex: 1;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .social-media ul li a {
+            display: block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 50%;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-media ul li a:hover {
+            background-color: #0056b3;
+        }
+
+        .social-media ul li a.facebook {
+            background-color: #3b5998;
+        }
+        .social-media ul li a.instagram {
+            background-color: #E4405F;
+        }
+
+        .social-media ul li a.youtube {
+            background-color: #FF0000;
+        }
+        .container {
+            background-color: bisque; 
+            padding: 20px; 
+            border-radius: 10px; 
+        }
+
+        @media (max-width: 768px) {
+            .social-media ul li {
+                flex-basis: 48%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .social-media ul li {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+         <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 65px;">Perpustakaan SUKA BACA</h1>
+    </header>
+    <nav>
+        <div class="dropdown">
+            <a href="#">Beranda</a>
+            <div class="dropdown-content">
+              <a href="index.html">Home</a>
+              <a href="index(5).html">About Us</a>
+            </div>
+        </div>
+          <a href="index(2).html">Link Eksternal</a>
+          <a href="index(3).html">Layanan</a>
+          <div class="dropdown">
+            <a href="#">Koleksi</a>
+            <div class="dropdown-content">
+                <a href="index(6).html">video dan audio</a>
+                <a href="index(4).html">tabel bahan buku</a>
+                <a href="index(7).html">buku</a>
+                <a href="index(8).html">belajar php</a>
+            </div>
+        </div>
+      </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <form class="d-flex" >
+              <input
+                class="form-control me-2 mt-4 shadow"type="search" placeholder="Type Books..." aria-label="Search" style="height: 30px; color: rgb(0, 0, 0);"/>
+              <button class="btn1 bg-dark mt-4 shadow" type="submit" style="color: white;">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+        <!-- First Book Card -->
+        <div class="col-12 col-md-3 mb-3">
+          <div class="card2">
+              <img src="https://deepublishstore.com/wp-content/uploads/2023/05/Python.png" style="border-radius: 20px;" class="card-img-top" alt="gambar tidak ditemukan">
+              <div class="card-body">
+                  <h5 style="text-align: center;">Pemrograman Python untuk Pemula</h5>
+                  <div class="star text-center">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i style="color: black;" class="far fa-star"></i>
+                  </div>
+                  <p class="date text-center">Tanggal rilis: 15 Maret 2022.</p>
+                  <p class="detaile">Mulailah perjalanan Anda dalam dunia pemrograman dengan panduan lengkap ini yang mencakup dasar-dasar Python dan aplikasi praktisnya ...</p>
+                  <a class="btn btn-primary" href="detail.html" role="button">Preview</a>
+              </div>
+          </div>
+      </div>
+
+        <!-- Second Book Card -->
+        <div class="col-12 col-md-3 mb-3">
+            <div class="card2">
+                <img src="picture/1.jpg" style="border-radius: 20px;" class="card-img-top" alt="gambar tidak ditemukan">
+                <div class="card-body">
+                    <h5 style="text-align: center;">Dasar - Dasar Teknik Informatika</h5>
+                    <div class="star text-center">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i style="color: black;" class="far fa-star"></i>
+                    </div>
+                    <p class="date text-center">Tanggal rilis: 9 September 2021.</p>
+                    <p class="detaile">Berkenalan dan belajar tentang pengolahahan data, pemprosesan data, penyimpanan data, manipulasi data dan masih banyak lagi ...</p>
+                    <a class="btn btn-primary" href="detail.html" role="button">Preview</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Book Card -->
+        <div class="col-12 col-md-3 mb-3">
+            <div class="card2">
+                <img src="picture/0.jpg" style="border-radius: 20px;" class="card-img-top" alt="gambar tidak ditemukan">
+                <div class="card-body">
+                    <h5 style="text-align: center;">Metode Statistik Jilid 2</h5>
+                    <div class="star text-center">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i style="color: black;" class="far fa-star"></i>
+                        <i style="color: black;" class="far fa-star"></i>
+                    </div>
+                    <p class="date text-center">Tanggal rilis: 06 October 2021.</p>
+                    <p class="detaile">Statistika masa kini bukan lagi perkara perhitungan manual dengan banyak rumus yang harus dihafal. Sebaliknya, statistika perlu mewadahi rasa ingin tahu dan sikap ...</p>
+                    <a class="btn btn-primary" href="detail.html" role="button">Preview</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fourth Book Card -->
+        <div class="col-12 col-md-3 mb-3">
+            <div class="card2">
+                <img src="picture/5.jpg" style="border-radius: 20px;" class="card-img-top" alt="gambar tidak ditemukan">
+                <div class="card-body">
+                    <h5 style="text-align: center;">Investing in Digital Start Up</h5>
+                    <div class="star text-center">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i style="color: black;" class="far fa-star"></i>
+                    </div>
+                    <p class="date text-center">Tanggal rilis: 27 October 2021.</p>
+                    <p class="detaile">Buku ini menjawab pertanyaan:
+                        <br>
+                        1. Bagaimana cara kerja dunia 4.0 sesungguhnya?
+                        <br>
+                        ...
+                        <br>
+                    </p>
+                    <a class="btn btn-primary" href="detail.html" role="button">Preview</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fifth Book Card -->
+        <div class="col-12 col-md-3 mb-3">
+            <div class="card2">
+                <img src="https://www.duniailkom.com/wp-content/uploads/2018/09/Cover-JavaScript-Uncover-banner-big.jpg" style="border-radius: 20px;" class="card-img-top" alt="gambar tidak ditemukan">
+                <div class="card-body">
+                    <h5 style="text-align: center;">JavaScript Uncover</h5>
+                    <div class="star text-center">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="date text-center">Tanggal rilis: 12 Januari 2020.</p>
+                    <p class="detaile">Panduan lengkap untuk memahami dan menguasai JavaScript, bahasa pemrograman yang digunakan secara luas dalam pengembangan web ...</p>
+                    <a class="btn btn-primary" href="detail.html" role="button">Preview</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sixth Book Card -->
+       <div class="col-12 col-md-3 mb-3">
+            <div class="card2">
+                <img src="picture/4.jpg" style="border-radius: 20px;" class="card-img-top" alt="gambar tidak ditemukan">
+                <div class="card-body">
+                    <h5 style="text-align: center;">Kode HTML Untuk Belajar Kilat</h5>
+                    <div class="star text-center">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="date text-center">Tanggal rilis: 19 April 2019.</p>
+                    <p class="detaile">Teknik menguasai HTML secepat kilat Untuk pemula yang ingin menjadi master HTML Untuk menguasai pemrograman web ...</p>
+                    <a class="btn btn-primary" href="detail.html" role="button">Preview</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seventh Book Card -->
+        <div class="col-12 col-md-3 mb-3">
+            <div class="card2">
+                <img src="https://thinkjubilee.com/wp-content/uploads/2016/12/otodidak-desain-grafis-dengan-adobe-illustrator.jpg" style="border-radius: 20px;" class="card-img-top" alt="gambar tidak ditemukan">
+                <div class="card-body">
+                    <h5 style="text-align: center;">Desain Grafis dengan Adobe Illustrator</h5>
+                    <div class="star text-center">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i style="color: black;" class="far fa-star"></i>
+                        <i style="color: black;" class="far fa-star"></i>
+                    </div>
+                    <p class="date text-center">Tanggal rilis: 22 Juni 2020.</p>
+                    <p class="detaile">Pelajari cara menggunakan Adobe Illustrator untuk menciptakan desain grafis yang menakjubkan dengan panduan langkah demi langkah ini ...</p>
+                    <a class="btn btn-primary" href="detail.html" role="button">Preview</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

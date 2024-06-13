@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defriyantisgr/Library</title>
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+          height: 100vh;
+          background-image: url('https://cdn.kibrispdr.org/data/12/background-perpustakaan-hd-32.jpg');
+      }
+      header {
+          background-color: maroon;
+          color: #fff;
+          padding: 10px;
+          text-align: center;
+          padding: 20px 0;
+      }
+      h1 {
+          margin: 0;
+      }
+      nav {
+          background-color: brown;
+          padding: 10px 0;
+          text-align: center;
+          padding: 10px 0;
+      }
+      nav a {
+          color: #fff;
+          text-decoration: none;
+          padding: 0 15px;
+      }
+      nav a:hover {
+          background-color: black;
+      }
+      .dropdown {
+          position: relative;
+          display: inline-block;
+      }
+      .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: salmon;
+          min-width: 150px;
+          z-index: 1;
+      }
+      .dropdown-content a {
+          color: whitesmoke;
+          padding: 10px 14px;
+          text-decoration: none;
+          display: block;
+      }
+      .dropdown:hover .dropdown-content {
+          display: block;
+      }
+      @media (max-width: 576px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                display: block;
+                padding: 10px 0;
+            }
+        }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 65px;">Perpustakaan SUKA BACA</h1>
+  </header>
+  <nav>
+    <div class="dropdown">
+        <a href="#">Beranda</a>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="index(5).html">About Us</a>
+        </div>
+    </div>
+      <a href="index(2).html">Link Eksternal</a>
+      <a href="index(3).html">Layanan</a>
+      <div class="dropdown">
+        <a href="#">Koleksi</a>
+        <div class="dropdown-content">
+            <a href="index(6).html">video dan audio</a>
+            <a href="index(4).html">tabel bahan buku</a>
+            <a href="index(7).html">buku</a>
+            <a href="index(8).html">belajar php</a>
+        </div>
+    </div>
+</nav>
+  </nav>
+      <h2 style="color: white;">Explore About Library</h2>
+      <div>
+        <li>
+          <a href="https://lib.ugm.ac.id/">
+            <h4><b>1. Perpustakaan UGM</b></h4>
+            <img src="picture/th.jpeg" alt="Perpustakaan UGM" width="300" height="200">
+          </a>
+              <p style="color: black;">Di awal berdirinya pada tanggal 1 Maret 1951 Perpustakaan UGM menempati gedung di Jl. Senopati dan saat ini berada di kampus Bulaksumur, Yogyakarta.Selain Perpustakaan Pusat, juga terdapat 18 perpustakaan fakultas, 1 perpustakaan sekolah vokasi, 1 perpustakaan sekolah pascasarjana dan beberapa perpustakaan pusat studi serta jurusan/bagian maupun program studi yang terintegrasi dalam satu sistem informasi perpustakaan.Mulai 1 April 2012 semua unit di Perpustakaan UGM telah menempati satu lokasi yaitu di Bulaksumur 16 Yogyakarta.</p>
+        </li>
+          <br>
+          <br>
+        <li>
+          <a href="https://perpustakaan.unimed.ac.id/">
+          <h4><b>2. Perpustakaan Unimed</b></h4>
+            <img src="picture/download.jpeg" alt="Perpustakaan Unimed" width="300" height="200">
+          </a>
+          <p class="justify" style="color: black;">UPT Perpustakaan Universitas Negeri Medan pindah ke gedung baru Gedung Digital Library Universitas Negeri Medan dengan luas 13.585 m2.Pada hari Sabtu, 14 Desember 2013 Gedung Digital Library Universitas Negeri Medan diresmikan oleh Menteri Pendidikan dan Kebudayaan Republik Indonesia Gedung Digital Library Unimed terdiri dari 5 lantai dengan fasilitas yang lebih baik.</p>
+        </li>
+        <br>
+        <br>
+        <li>
+          <a href="https://balaiyanpus.jogjaprov.go.id/static/grhatama-pustaka">
+          <h4><b>3. Perpustakaan Grhatama Pustaka</b></h4>
+            <img src="picture/th (1).jpeg" alt="Perpustakaan Grhatama" width="300" height="200">
+          </a>
+          <p style="color: black;">Grhatama Pustaka diresmikan oleh Gubernur DIY Sultan Hamengku Buwono X pada hari Senin tanggal 21 Desember 2015. Bangunan/gedung layanan perpustakaan ini merupakan perpaduan konsep modern dan tradisional. Kemegahan dan berbagai fasilitas mengakomodir kebutuhan masyarakat modern akan kemudahan dan kenyamanan. Filosofi bangunan mencerminkan semangat keistimewaan Jogja serta cita-cita kesempurnaan manusia Jawa sebagai pribadi yang prakoso, wulung, agung dan wangi melalui pemanfaatan perpustakaan.Terdiri dari 3 lantai Grhatama Pustaka siap menjadi destinasi rekreatif edukatif bagi masyarakat DIY dan sekitarnya.</p>
+        </li>
+      </div>
+      <div>
+        <li>
+          <h2 style="color: blue;">listen to the audio here</h2>
+          <audio controls>
+          <source src="multimedia/audio.mp3" type="audio/mpeg">
+        </audio>
+        </li>
+      </div>
+      <h2 style="color: #fff;">Form Keanggotaan</h2>
+    <a href="index(3).html">Selanjutnya</a> 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     
