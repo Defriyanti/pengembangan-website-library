@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Defriyantisgr/Library</title>
+    <title>Perpustakaan SUKA BACA</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
     <style>
         body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            height: 100vh;
             background-image: url('https://cdn.kibrispdr.org/data/12/background-perpustakaan-hd-32.jpg');
-            background-size: cover;
+            background-size: contain;
             background-position: center;
         }
         header {
@@ -20,9 +24,6 @@
             color: #fff;
             padding: 10px;
             text-align: center;
-        }
-        h1 {
-            margin: 0;
         }
         nav {
             background-color: brown;
@@ -57,22 +58,22 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
+        main {
+            flex: 1;
+            padding: 20px;
+        }
         form {
             max-width: 400px;
-            margin: auto;
+            margin: 20px auto;
             background-color: whitesmoke;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         input[type="text"],
         input[type="email"],
         input[type="number"],
-        select {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
+        select,
         input[type="date"] {
             width: 100%;
             padding: 10px;
@@ -92,7 +93,7 @@
             width: 100%;
         }
         input[type="submit"]:hover {
-            background-color: indianred;
+            background-color: darkred;
         }
         @media (max-width: 576px) {
             nav {
@@ -120,26 +121,69 @@
             }
         }
     </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Event listeners for buttons
+            $('.btn-info').on('click', function() {
+                let action = $(this).attr('onclick');
+                switch(action) {
+                    case 'showAlert()':
+                        alert('This is an alert box!');
+                        break;
+                    case 'showInHtml()':
+                        $('#output').html('Data displayed in HTML!');
+                        break;
+                    case 'showInConsole()':
+                        console.log('Data displayed in console!');
+                        break;
+                }
+            });
+
+            // Datepicker for input fields
+            $('#tanggal_lahir, #Tanggal_perpanjangan, #tanggal_kembali').datepicker({
+                changeMonth: true,
+                changeYear: true,
+                yearRange: '1900:2024'
+            });
+
+            // jQuery UI Accordion for the library form
+            $('.container').accordion({
+                collapsible: true,
+                active: false
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
-        <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 65px;">Perpustakaan SUKA BACA</h1>
+        <h1>Perpustakaan SUKA BACA</h1>
     </header>
     <nav>
         <div class="dropdown">
             <a href="#">Beranda</a>
             <div class="dropdown-content">
-              <a href="index.html">Home</a>
-              <a href="index(5).html">About Us</a>
+                <a href="index.html">Home</a>
+                <a href="index(5).html">About Us</a>
             </div>
         </div>
-          <a href="index(2).html">Link Eksternal</a>
-          <a href="index(3).html">Layanan</a>
-          <a href="index(4).html">Koleksi</a>
-      </nav>
+        <a href="index(2).html">Link Eksternal</a>
+        <a href="index(3).html">Layanan</a>
+        <div class="dropdown">
+            <a href="#">Koleksi</a>
+            <div class="dropdown-content">
+                <a href="index(6).html">Video dan Audio</a>
+                <a href="index(4).html">Tabel Bahan Buku</a>
+                <a href="index(7).html">Buku</a>
+                <a href="index(8).html">Belajar PHP</a>
+            </div>
+        </div>
+    </nav>
+    <main>
         <h2 style="color: #fff;"><b>Program Studi Perpustakaan dan Sains Informasi</b></h2>
         <form action="#" method="post">
-            <h3 style="color: black;background-color: white;">Formulir Keanggotaan Perpustakaan</h3>
+            <h3 style="color: black; background-color: white;">Formulir Keanggotaan Perpustakaan</h3>
             <label for="nama">Nama :</label>
             <input type="text" id="nama" name="nama" required>
             
@@ -169,36 +213,37 @@
             
             <input type="submit" value="Submit">
         </form>
-
+        
         <form action="/submit_order" method="post">
-            <h4 style="color:black;background-color: white;background-size: cover;padding: 10px;">Form Pemesanan Buku</h4>
+            <h4 style="color: black; background-color: white; padding: 10px;">Form Pemesanan Buku</h4>
             <label for="Judul_Buku">Judul Buku:</label><br>
             <input type="text" id="book_title" name="book_title" required><br>
             <label for="Nama">Nama:</label><br>
             <input type="text" id="Nama" name="Nama" required><br>
             <label for="Email">Email:</label><br>
-            <input type="Email" id="Email" name="Email" required><br>
+            <input type="email" id="Email" name="Email" required><br>
             <label for="jumlah">Jumlah:</label>
             <input type="number" id="jumlah" name="jumlah" min="1" required>
             <input type="submit" value="Order">
-          </form>
-          <br>
-          <br>
-          <form action="/submit_renewal" method="post">
-            <h4 style="color:black ;background-color: white;background-size: cover;padding: 10px;">Form Perpanjangan Peminjaman Buku</h4>
+        </form>
+        
+        <form action="/submit_renewal" method="post">
+            <h4 style="color: black; background-color: white; padding: 10px;">Form Perpanjangan Peminjaman Buku</h4>
             <label for="Judul_Buku">Judul Buku:</label><br>
             <input type="text" id="Judul_Buku" name="Judul_Buku" required><br>
             <label for="kode_buku">Kode Buku:</label><br>
             <input type="text" id="kode_buku" name="kode_buku" required><br>
             <label for="Nama_Peminjam">Nama Peminjam:</label><br>
             <input type="text" id="Nama_Peminjam" name="Nama_Peminjam" required><br>
-            <label for="tanggal_perpanjangan">Tanggal perpanjangan</label><br>
+            <label for="tanggal_perpanjangan">Tanggal perpanjangan:</label><br>
             <input type="date" id="Tanggal_perpanjangan" name="Tanggal_perpanjangan" required><br>
             <label for="tanggal_kembali">Tanggal Kembali:</label><br>
             <input type="date" id="tanggal_kembali" name="tanggal_kembali" required>
             <input type="submit" value="Perpanjang">
-          </form>
-        <h2 style="color: #fff;">Form Perpustakaan</h2>
-        <a href="index(4).html">Selanjutnya</a>   
+        </form>
+    </main>
+    <footer style="background-color: maroon; color: white; text-align: center; padding: 10px;">
+        &copy; 2024 Defriyanti Sigiro. Perpustakaan SUKA BACA
+    </footer>
 </body>
 </html>
